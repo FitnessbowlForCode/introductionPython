@@ -17,7 +17,7 @@ def next_even_fib_after_N(n):
 
         z = result[n]    
         print(z)
-        n = n + 1
+        n += 1
         print(z)
 
     return print("Das ist das Ergebnis: ", z)
