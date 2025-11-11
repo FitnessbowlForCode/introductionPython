@@ -22,3 +22,17 @@ def next_even_fib_after_N(n):
 
     return print("Das ist das Ergebnis: ", z)
 next_even_fib_after_N(6)
+
+
+#####################
+#Chat-Version
+def next_even_fib_after_N(n):
+    evens = []
+    x, y = 1, 1
+
+    while len(evens) <= n // 3:
+        x, y = y, x + y
+        if x % 2 == 0:
+            evens.append(x)
+
+    return evens[n // 3]
